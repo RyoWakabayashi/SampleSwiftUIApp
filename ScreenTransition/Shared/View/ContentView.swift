@@ -13,14 +13,11 @@ struct ContentView: View {
     var body: some View {
         switch session.screenID {
         case .first:
-            FirstView()
-                .environmentObject(session)
+            FirstView(viewModel: FirstViewModel(session: self.session))
         case .second:
-            SecondView()
-                .environmentObject(session)
+            SecondView(viewModel: SecondViewModel(session: self.session))
         case .third:
-            ThirdView()
-                .environmentObject(session)
+            ThirdView(viewModel: ThirdViewModel(session: self.session))
         }
     }
 }
