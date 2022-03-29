@@ -1,0 +1,24 @@
+{
+  "name": "SampleSwiftUIApp",
+  "version": "2.0.1",
+  "description": "SampleSwiftUIApp",
+  "main": "",
+  "scripts": {
+    "prepare": "bash -c \"cp ./git_hooks/commit-msg ./.git/hooks/\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:RyoWakabayashi/SampleSwiftUIApp.git"
+  },
+  "author": "Ryo Wakabayashi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyoWakabayashi/SampleSwiftUIApp/issues"
+  },
+  "homepage": "https://github.com/RyoWakabayashi/SampleSwiftUIApp#readme",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1"
+  }
+}
