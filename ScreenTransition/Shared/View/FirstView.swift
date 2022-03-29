@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct FirstView: View {
-    @EnvironmentObject var session: Session
+    @ObservedObject var viewModel: FirstViewModel
+
+    init(viewModel: FirstViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         HStack {
@@ -16,7 +20,7 @@ struct FirstView: View {
             VStack {
                 Spacer()
                 Button("Go to second") {
-                    session.screenID = .second
+                    self.viewModel.go()
                 }
                 .foregroundColor(.white)
                 Spacer()
@@ -29,7 +33,7 @@ struct FirstView: View {
 
 struct FirstView_Previews: PreviewProvider {
     static var previews: some View {
-        FirstView()
+        FirstView(viewModel: FirstViewModel())
             .environmentObject(Session())
     }
 }

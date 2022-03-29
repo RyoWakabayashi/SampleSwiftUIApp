@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86809E1127F2CF12001FEA31 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86809E1027F2CF12001FEA31 /* FirstViewModel.swift */; };
+		86809E1327F2D2B2001FEA31 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86809E1227F2D2B2001FEA31 /* SecondViewModel.swift */; };
+		86809E1527F2D2BC001FEA31 /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86809E1427F2D2BC001FEA31 /* ThirdViewModel.swift */; };
 		86AA17ED27F286DA00B200DC /* ScreenTransitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA17DD27F286D500B200DC /* ScreenTransitionApp.swift */; };
 		86AA17EE27F286DA00B200DC /* ScreenTransitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA17DD27F286D500B200DC /* ScreenTransitionApp.swift */; };
 		86AA17EF27F286DA00B200DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA17DE27F286D500B200DC /* ContentView.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86809E1027F2CF12001FEA31 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
+		86809E1227F2D2B2001FEA31 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		86809E1427F2D2BC001FEA31 /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
 		86AA17DD27F286D500B200DC /* ScreenTransitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTransitionApp.swift; sourceTree = "<group>"; };
 		86AA17DE27F286D500B200DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86AA17DF27F286D900B200DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +63,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86809E0E27F2CEE3001FEA31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86AA17DE27F286D500B200DC /* ContentView.swift */,
+				86AA180127F28DB700B200DC /* FirstView.swift */,
+				86AA180427F28DC000B200DC /* SecondView.swift */,
+				86AA180727F28DCC00B200DC /* ThirdView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86809E0F27F2CEFC001FEA31 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				86809E1027F2CF12001FEA31 /* FirstViewModel.swift */,
+				86809E1227F2D2B2001FEA31 /* SecondViewModel.swift */,
+				86809E1427F2D2BC001FEA31 /* ThirdViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		86809E1627F2D5D7001FEA31 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				86AA17FE27F28A4100B200DC /* ScreenID.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		86809E1727F2D5E1001FEA31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86AA17FB27F289B100B200DC /* Session.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		86AA17D727F286D400B200DC = {
 			isa = PBXGroup;
 			children = (
@@ -69,14 +112,12 @@
 		86AA17DC27F286D500B200DC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				86809E1727F2D5E1001FEA31 /* Model */,
+				86809E1627F2D5D7001FEA31 /* Enum */,
+				86809E0E27F2CEE3001FEA31 /* View */,
+				86809E0F27F2CEFC001FEA31 /* ViewModel */,
 				86AA17DD27F286D500B200DC /* ScreenTransitionApp.swift */,
-				86AA17DE27F286D500B200DC /* ContentView.swift */,
 				86AA17DF27F286D900B200DC /* Assets.xcassets */,
-				86AA17FB27F289B100B200DC /* Session.swift */,
-				86AA17FE27F28A4100B200DC /* ScreenID.swift */,
-				86AA180127F28DB700B200DC /* FirstView.swift */,
-				86AA180427F28DC000B200DC /* SecondView.swift */,
-				86AA180727F28DCC00B200DC /* ThirdView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -197,9 +238,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				86AA180827F28DCC00B200DC /* ThirdView.swift in Sources */,
+				86809E1327F2D2B2001FEA31 /* SecondViewModel.swift in Sources */,
 				86AA180527F28DC000B200DC /* SecondView.swift in Sources */,
 				86AA17EF27F286DA00B200DC /* ContentView.swift in Sources */,
+				86809E1127F2CF12001FEA31 /* FirstViewModel.swift in Sources */,
 				86AA180227F28DB700B200DC /* FirstView.swift in Sources */,
+				86809E1527F2D2BC001FEA31 /* ThirdViewModel.swift in Sources */,
 				86AA17ED27F286DA00B200DC /* ScreenTransitionApp.swift in Sources */,
 				86AA17FF27F28A4100B200DC /* ScreenID.swift in Sources */,
 				86AA17FC27F289B100B200DC /* Session.swift in Sources */,
