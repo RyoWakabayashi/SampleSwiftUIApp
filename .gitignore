@@ -1,0 +1,7 @@
+# XCode
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Node.js
+node_modules
